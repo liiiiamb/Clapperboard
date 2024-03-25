@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="input.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+  <div class="grid_container">
+    <img src="assets/clapper-icon.png" class="grid_item" id="icon_img">
+    <p id="clapper_text" class="grid_item">Clapperboard</p>
+    <div class="buttons">
+    <button class="button-54" role="button">Create an Account</button>
+    <button class="button-54" role="button">Sign In</button>
+    </div>
+  </div>
+  <div class="search_bar">
+    <p class="favourite_text">Find your new favourite watch!</p>
+    <div class="arrow">
+      <div class="curve"></div>
+      <div class="point"></div>
+    </div>
+    <input type="text" placeholder="Search.." class="search" id="searchInput">
+
+    <div class="movie-container" id="movieContainer">
+      <!-- Movie tiles will be dynamically added here -->
+      
+    </div>
+    
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="createtext">Create an Account</h2>
+      <!-- Your input fields and submit button go here -->
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+    
+</body>
+</html>
+
+
+
+<!--LINKS TO ADD: 
+<a target="_blank" href="https://icons8.com/icon/u8Eea3DU32Ut/film-slate">Film Slate</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></a>-->

@@ -1,0 +1,240 @@
+
+
+.body{
+    background-color: #F7F0E9;
+}
+
+#clapper_text{
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin-left: 35px;
+   
+}
+
+.grid_container{
+    display: flex;
+    align-items: center;
+}
+
+.grid_item{
+    margin-right: 20px;
+}
+
+#icon_img{
+    margin-left: 20px;
+}
+
+.button-54 {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 20px;
+}
+
+.buttons{
+    margin-left: 1100px;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.search_bar{
+    margin-top: 200px;
+    
+    font-family: "Love Ya Like A Sister", cursive;
+    text-align: center;
+}
+
+.favourite_text{
+    font-size: 22px;
+    margin-right: 290px;
+}
+
+.search{
+    font-family: "Love Ya Like A Sister", cursive;
+    width: 400px;
+    height: 40px;
+    display: inline-block;
+    border: 1.5px solid black;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.movie-tile {
+  width: 270px;
+  height: 500px;
+  margin-bottom: 20px; /* Adjust spacing between rows */
+  background-color: #F7F0E9; /* Add background color for better visualization */
+  border: 2px solid white;
+}
+
+.movie-tile img {
+  width: 75%;
+  height: 75%;
+  object-fit: cover; /* Ensure poster image fills the tile */
+}
+
+.arrow {
+	position: relative;
+  margin:0 90px 0 690px;
+  width: 100px;
+}
+
+.arrow .curve {
+	border: 2px solid black;
+	border-color: transparent transparent transparent black;
+	height: 100px;
+	width: 1200px;
+	border-radius: 120px 0 0 150px;
+}
+
+.arrow .point {
+	position: absolute;
+	left: 15px;
+	top: 80px;
+}
+
+.arrow .point:before, .arrow .point:after {
+	border: 1px solid black;
+	height: 25px;
+	content: "";
+	position: absolute;
+}
+
+.arrow .point:before {
+	top: -11px;
+	left: -11px;
+	transform:rotate(-74deg);
+	-webkit-transform:rotate(-74deg);
+  -moz-transform:rotate(-74deg);
+  -ms-transform: rotate(-74deg);
+}
+
+.arrow .point:after {
+  top: -20px;
+	left: 5px;
+	transform:rotate(12deg);
+	-webkit-transform: rotate(12deg);
+  -moz-transform:rotate(12deg);
+  -ms-transform: rotate(12deg);
+}
+
+.movie-button {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 20px;
+}
+
+.buttons{
+    margin-left: 1100px;
+}
+
+.movie-button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .movie-button {
+    padding: 0.25em 0.75em;
+  }
+}
+
+/* Add this CSS to style the modal and overlay */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); 
+  
+}
+
+.modal-content {
+  background-color: #F7F0E9;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  
+  width: 300px; /* Adjust width */
+  height: 500px; /* Adjust height */
+  border: 2px solid black;
+  border-radius: 12px;
+  font-family: "Love Ya Like A Sister", cursive;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#createtext{
+  font-size: 20px;
+}
